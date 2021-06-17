@@ -1,14 +1,24 @@
 ﻿using System.Collections.Generic;
+using Tasks.HelpClasses;
 
 namespace Tasks
 {
     public class Task7
     {
+        private readonly Repository _repo;
+        public Task7(Repository repo)
+        {
+            _repo = repo;
+        }
         /*
          * Desenvolma um método que retorne o nome dos produtos que estão com estoque zerado
          * Dica: A classe Repository possui as informções dos Products
          */
-        public static List<string> GetProductsOutOfStock() { }
+
+        public static List<string> GetProductsOutOfStock() 
+        {
+            var result = _repo.Products.Select()
+        }
 
         /*
         * Desenvolma um método que retorne a soma total das quantidades de estoque dos itens

@@ -20,6 +20,9 @@
          * 3 - abc1324
          * 4 - az111W
          */
-        public static bool CheckInput(string input) { }
+        public static bool CheckInput(string input)
+        { 
+            
+        }
     }
 }
