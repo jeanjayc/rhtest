@@ -13,7 +13,9 @@ namespace Tasks
          */
         public static List<Student> GetStudentsByBirth(List<Student> students) 
         {
-          
+            Repository repo = new Repository();
+            var result = repo.Students.Where(s => s.Birth.Year == 2020).ToList();
+            return result;
         }
     }
 }
