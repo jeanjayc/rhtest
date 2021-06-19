@@ -15,6 +15,7 @@ namespace Tasks
         {
             Repository repo = new Repository();
             var result = repo.Students.Where(s => s.Birth.Year == 2020).ToList();
+            result.ForEach(p => Console.WriteLine(p.ToString()));
             return result;
         }
     }
