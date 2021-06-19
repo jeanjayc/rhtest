@@ -11,7 +11,7 @@ namespace Tasks
          * Desenvolva um método que retorne todos os estudantes do Repositório que nasceram em 2020      
          * Dica: A classe Repository possui as informções dos Students
          */
-        public static List<Student> GetStudentsByBirth(List<Student> students) 
+        public static List<Student> GetStudentsByBirth() 
         {
             Repository repo = new Repository();
             var result = repo.Students.Where(s => s.Birth.Year == 2020).ToList();
